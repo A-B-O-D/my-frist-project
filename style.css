@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+} 
+.img_box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 3px solid aqua;
+    flex-shrink: 0 ;
+}
+.img_box img{
+    width: 100%;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+.menu:hover{
+    width: 360px;
+    transition: 0.75s;
+}
+.profil{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: 0.5s;
+}
+ul li a:hover, .active ,.data_inf .box:hover ,td:hover{
+    background-color: #ffffff55;
+}
+.log_out{
+    background-color: red;
+    position: absolute;
+    bottom: 5%;
+    width: 95%; 
+}
+ul li a i{
+    font-size: 25px;
+}
+.contant{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: rgb(4, 138, 255);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius:10px;
+    margin: 10px 0;
+}
+.title-info p{
+    font-size: 25px;
+}
+.data_inf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+} 
+.data_inf .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis:  150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.data_inf .box i{
+    font-size: 40px;
+}
+.data_inf .box .data{
+    text-align: center;
+}
+.data_inf .box .data p{
+    font-size: 25px;
+}
+.data_inf .box .data span{
+    font-size: 40px;
+    padding: 10px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+    
+}
+td,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 10px;
+}
+th{
+    background-color: rgb(26, 101, 175);
+}
+.price, .count{
+    padding: 8px;
+    border-radius: 8px;
+}
+.price{
+    background-color: darkcyan;
+}
+.count{
+    background-color: darkturquoise;
+}
